@@ -1,3 +1,42 @@
-<div>
-    All posts
+<!-- Posts -->
+<div class="posts">
+    {% for p in paginator.posts %}
+    <div class="post">
+        <div>
+          <span class="post-date">{{ p.date | date: "%B %d, %Y" }}</span>
+          <span class="post-categories">
+            {% for category in p.categories %}
+              <span>{{ category }}</span>
+            {% endfor %}
+        </span>
+        </div>
+        <h2 class="post-title">
+          <span class="post-titel-catgory {{ p.categories.first | downcase }}">{{ p.categories.first }}:</span>
+          <span>{{ p.title }}</span>
+        </h2>
+        <div>
+          {{ p.content }}  
+        </div>      
+        <div>
+          
+        </div>
+    </div>
+    {% endfor %}
+  
+    <!-- Pagination links -->
+    {% if paginator.total_pages > 1 %}
+        <div class="pagination">
+        {% if paginator.previous_page %}
+            <a href="{{ paginator.previous_page_path }}" class="previous">‹</a>
+        {% else %}
+            <span class="previous">‹</span>
+        {% endif %}
+        
+        {% if paginator.next_page %}
+            <a href="{{ paginator.next_page_path }}" class="next">›</a>
+        {% else %}
+            <span class="next ">›</span>
+        {% endif %}
+        </div>
+    {% endif %}
 </div>

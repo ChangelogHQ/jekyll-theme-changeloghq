@@ -1,0 +1,95 @@
+div.posts {    
+    display: block;
+    max-width: 60rem;
+
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-top: -4rem;
+    margin-left: auto;
+    margin-right: auto;        
+    
+    div.post {
+        display: block;    
+        background-color: $post-background;
+        color: $post-font;
+
+        border-radius: .25rem;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .12), 0 2px 4px 0 rgba(0, 0, 0, .08);
+
+        border-width: 0;
+        border-style: solid;
+        border-color: #dae1e7;
+
+        padding: 6rem;
+        margin-bottom: 3rem;
+
+        span.post-date {
+            color: #a0aec0;
+            font-size: 0.75rem;
+            margin: 0;
+        }
+
+        span.post-categories {
+            margin-left: .5rem;
+            
+            span {                                
+                padding: .125rem .625rem;
+                margin-right: .25rem;
+                border-radius: .4rem;
+                font-size: .75rem;
+                font-weight: 500;
+                background-color: #edf2f7;       
+                line-height: 1rem;                     
+                text-align: center;
+            }
+        }
+
+        h2.post-title {
+            margin-top: 0;
+
+            span.post-titel-catgory {                
+
+                &.announcement, &.update {
+                    border-bottom: 2px solid #5896bb;                    
+                }                
+
+                &.feature {
+                    border-bottom: 2px solid #7fc65b;
+                }
+
+                &.bugfix {
+                    border-bottom: 2px solid #f1844a;
+                }
+            }
+        }
+    }
+
+    div.pagination {
+        display: flex;
+        max-width: 60rem;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 2rem;
+        justify-content: center;    
+        
+        .next, .previous {            
+            text-decoration: none;
+            color: #8795a1;
+            border-radius: .25rem;   
+
+            padding-left: .75rem;
+            padding-right: .75rem;
+            padding-top: .25rem;
+            padding-bottom: .25rem;
+
+            margin-left: .25rem;
+            margin-right: .25rem;
+
+            font-size: 1.5rem;                        
+        }
+
+        a.next:hover, a.previous:hover {
+            background-color: #dae1e7;
+        }
+    }
+}

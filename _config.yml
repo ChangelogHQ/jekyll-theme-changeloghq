@@ -2,3 +2,16 @@ title: Hosted Demo-Changelog power by ChangelogHQ
 subtitle: Check out the latest product updates below.
 company: ChangelogHQ
 logo: /assets/images/logo.png"
+
+# default configuration for SCSS
+sass:
+  style: compressed 
+
+# activate the needed plugins
+plugins: 
+  - jekyll-paginate
+
+# Default configuration for pagination
+paginate: 10
+paginate_path: "/posts/:num/"
+

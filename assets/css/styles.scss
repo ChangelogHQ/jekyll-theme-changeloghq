@@ -7,4 +7,24 @@ $header-font: #fff;
 $post-background: #fff;
 $post-font: #3d4852;
 
+{% if site.colors.body-bg %}
+$body-background: {{ site.colors.body-bg }};
+{% endif %}
+
+{% if site.colors.header-bg %}
+$header-background: {{ site.colors.header-bg }};
+{% endif %}
+
+{% if site.colors.header-ft %}
+$header-font: {{ site.colors.header-ft }};
+{% endif %}
+
+{% if site.colors.post-bg %}
+$post-background: {{ site.colors.post-bg }};
+{% endif %}
+
+{% if site.colors.post-ft %}
+$post-font: {{ site.colors.post-ft }};
+{% endif %}
+
 @import "jekyll-theme-changeloghq";

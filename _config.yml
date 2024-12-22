@@ -1,7 +1,16 @@
+# deafult settings for the theme
 title: Hosted Demo-Changelog power by ChangelogHQ
 subtitle: Check out the latest product updates below.
 company: ChangelogHQ
 logo: /assets/images/logo.png"
+
+# color configurtion for the theme
+colors:   
+  body-bg: "#fbfbfb" 
+  header-bg: "#242e3a"
+  header-ft: "#fff"
+  post-bg: "#fff"
+  post-ft: "#3d4852"
 
 # default configuration for SCSS
 sass:

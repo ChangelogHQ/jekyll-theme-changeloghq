@@ -3,7 +3,11 @@
   <head>
     <meta charset="utf-8">
     <title>{{ site.title }}</title>    
-    <link rel="stylesheet" href="/assets/css/styles.css">
+    {% if site.github.build_revision %}
+      <link rel="stylesheet" href="{{ "/assets/css/styles.css?v=" | append: site.github.build_revision | relative_url }}">    
+    {% else %}
+      <link rel="stylesheet" href="{{ "/assets/css/styles.css" | relative_url }}">    
+    {% endif %}
   </head>
   <body>
     {% include header.html %}

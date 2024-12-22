@@ -1,0 +1,11 @@
+@import 'normalize';
+
+body {
+    background-color: $body-background;
+    -webkit-font-smoothing: antialiased;
+    line-height: 1.8;
+    font-family: sans-serif;
+}
+
+@import "header";
+@import "banner";

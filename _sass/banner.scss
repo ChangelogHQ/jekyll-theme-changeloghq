@@ -1,0 +1,20 @@
+div.banner {    
+    background-color: $header-background;
+
+    padding: 8rem;
+    padding-top: 3rem;
+
+    text-align: center;
+
+    h2 {
+        display: block;        
+        color: $header-font;
+        font-size: 3rem;
+    }
+
+    p {
+        display: block;
+        color: $header-font; 
+        margin: 0;       
+    }
+}

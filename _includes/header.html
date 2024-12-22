@@ -1,6 +1,10 @@
 <div class="header">
     <div>
-        <img src="{{ site.logo }}" alt="logo" class="logo">
+        {% if site.github.build_revision %}
+            <img src="{{ "/assets/images/logo.png?v=" | append: site.github.build_revision | relative_url }}" alt="logo" class="logo">
+        {% else %}
+            <img src="{{ "/assets/images/logo.png" | relative_url }}" alt="logo" class="logo">
+        {% endif %}
         <p class="title">{{ site.company }}</p>
     </div>
 </div>

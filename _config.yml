@@ -19,8 +19,12 @@ sass:
 # activate the needed plugins
 plugins: 
   - jekyll-paginate
+  - jekyll-feed
 
 # Default configuration for pagination
 paginate: 10
 paginate_path: "/posts/:num/"
 
+# Default configuration for the feed
+feed:
+  path: /posts.atom

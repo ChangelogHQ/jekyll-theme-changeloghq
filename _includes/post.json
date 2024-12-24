@@ -1,0 +1,8 @@
+{% for p in site.posts limit:site.paginate %} 
+    {
+        "id": "{{ p.id | escape }}",
+        "title": "{{ p.title | escape }}",
+        "description": "{{ p.content | escape }}",        
+        "published_at": "{{ p.date | date_to_xmlschema }}"        
+    }{% unless forloop.last %},{% endunless %}
+{% endfor %}

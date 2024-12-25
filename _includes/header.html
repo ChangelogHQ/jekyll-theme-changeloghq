@@ -8,3 +8,14 @@
         <p class="title">{{ site.company }}</p>
     </div>
 </div>
+<script>
+    // check if the page is embedded in an iframe
+    if (window.self !== window.top) {
+        
+        console.log("embede")
+        
+        // hide the header
+        document.querySelector('.header').style.display = 'none';
+    }
+    
+</script>

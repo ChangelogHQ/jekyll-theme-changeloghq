@@ -2,3 +2,9 @@
     <h2>{{ site.title }}</h2>
     <p>{{ site.subtitle }}</p>
 </div>
+<script>
+    // check if the page is embedded in an iframe and if so hide the banner
+    if (window.self !== window.top) {    
+        document.querySelector('.banner').style.display = 'none';
+    }    
+</script>

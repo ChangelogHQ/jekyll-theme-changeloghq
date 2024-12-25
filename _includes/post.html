@@ -40,3 +40,9 @@
         </div>
     {% endif %}
 </div>
+<script>
+  // check if the page is embedded in an iframe and if so corect the margin
+  if (window.self !== window.top) {    
+      document.querySelector('.posts').style.marginTop = '20px';
+  }    
+</script>

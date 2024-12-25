@@ -9,13 +9,8 @@
     </div>
 </div>
 <script>
-    // check if the page is embedded in an iframe
-    if (window.self !== window.top) {
-        
-        console.log("embede")
-        
-        // hide the header
+    // check if the page is embedded in an iframe and if so hide the header
+    if (window.self !== window.top) {    
         document.querySelector('.header').style.display = 'none';
-    }
-    
+    }    
 </script>

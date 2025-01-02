@@ -96,4 +96,20 @@ div.posts {
             background-color: #dae1e7;
         }
     }
+
+    p.img-80 {
+        text-align: center;
+        
+        img {
+            width: 80%;
+        }
+    }
+
+    p.img-50 {
+        text-align: center;
+        
+        img {
+            width: 50%;
+        }
+    }
 }
